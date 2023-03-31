@@ -1,1 +1,21 @@
+# dependencies
 **/node_modules
+FE/.pnp
+FE/.pnp.js
+
+# testing
+**/coverage
+
+# production
+FE/build
+
+# misc
+FE/.DS_Store
+FE/.env.local
+FE/.env.development.local
+FE/.env.test.local
+FE/.env.production.local
+
+FE/npm-debug.log*
+FE/yarn-debug.log*
+FE/yarn-error.log*
