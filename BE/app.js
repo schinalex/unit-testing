@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 3001
 const tasks = require('./routes/tasks')
 const connectDB = require('./db/connect')
 
@@ -16,7 +16,7 @@ app.get('/home', (req, res) => {
 const start = async() => {
     try {
         await connectDB()
-        app.listen(3000, console.log(`Server listening on port ${port}`))
+        app.listen(port, console.log(`Server listening on port ${port}`))
     } catch (error) {
         console.log(error)
     }
